@@ -1,0 +1,209 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.slider-banner
+		.owl-carousel.owl-theme
+			.item
+				img(src="../img/banner1.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-6.offset-md-3
+								h1 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+			.item
+				img(src="../img/banner.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-6.offset-md-3
+								h2 Chúng tôi là FullStack Vietnam
+								p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+	section.news
+		.container
+			.row
+				.col.wai
+					h4 TIN TUC
+			.row
+				.col-md-6.col-lg-4.dec
+					img(src="../img/owl-1.png", alt="")
+					.title
+						p 
+							b Chúng tôi là FullStack Vietnam
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.col-md-6.col-lg-4.dec
+					img(src="../img/owl-2.png", alt="")
+					.title
+						p 
+							b Chúng tôi là FullStack Vietnam
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.col-md-6.col-lg-4.dec
+					img(src="../img/owl-3.png", alt="")
+					.title
+						p 
+							b Chúng tôi là FullStack Vietnam
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+	section.backopa
+		.container
+			.row
+				.col.wai
+					h5 dinh huong phat trien
+			.row
+				.col-sm-6.col-lg-3.ico
+					<i class="fa fa-copy"></i>
+					.title
+						p 
+							b Chúng tôi là FullStack Vietnam
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.col-sm-6.col-lg-3.ico
+					<i class="fa fa-copy"></i>
+					.title
+						p 
+							b Chúng tôi là FullStack Vietnam
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+				.col-sm-6.col-lg-3.ico
+					<i class="fa fa-copy"></i>
+					.title
+						p 
+							b Chúng tôi là FullStack Vietnam
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam!
+				.col-sm-6.col-lg-3.ico
+					<i class="fa fa-copy"></i>
+					.title
+						p 
+							b Chúng tôi là FullStack Vietnam
+						p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti incidunt ex, autem dignissimos illum aperiam pariatur in explicabo corporis delectus totam! 
+	section.devolop
+		.container
+			.row.justify-content-center
+				.col-8
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est maxime hic perspiciatis perferendis quia, mollitia tenetur molestias molestiae deleniti, quidem, illo ut? Laboriosam quo nobis aut laudantium atque officiis eius!
+					button.btn.btn-secondary(type="button") xem them
+	section.dinhuong
+		.container
+			.row
+				.col.wai
+					h5 dinh huong phat trien
+			.row.justify-content-center.p-2
+				.menu-sel
+					ul
+						li(data-open='tab').active.click
+							a tat ca
+						li(data-open='tab1')
+							a tin thi truong
+						li(data-open='tab2')
+							a tin vit
+						li(data-open='tab3')
+							a group
+			.row
+					.col-md-6.col-lg-4.item#tab1
+						img.img-thumbnail(src="./img/owl-3.png", alt="")
+					.col-md-6.col-lg-4.item#tab1
+						img.img-thumbnail(src="./img/owl-3.png", alt="")
+					.col-md-6.col-lg-4.item#tab2
+						img.img-thumbnail(src="./img/owl-3.png", alt="")
+					.col-md-6.col-lg-4.item#tab3
+						img.img-thumbnail(src="./img/owl-3.png", alt="")
+					.col-md-6.col-lg-4.item#tab3
+						img.img-thumbnail(src="./img/owl-3.png", alt="")
+					.col-md-6.col-lg-4.item#tab2
+						img.img-thumbnail(src="./img/owl-3.png", alt="")
+	section.khachangnoi
+		.container
+			.row
+				.col.wai
+					h6 khach hang noi
+			.row.x2
+				.col
+					.owl-carousel.owl-theme
+						.item
+							figure.figure.d-flex.flex-column.align-items-center.justify-content-center
+								img(src="./img/layer-10.png", alt="")
+								figcaption.figure-caption 
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, quo harum laboriosam inventore odit a veniam cupiditate ex. Sed, qui. Ratione expedita ad pariatur nam amet, consequuntur enim error veniam!
+									a(href="#") name pentican seven
+									p chu vu ceos
+						.item
+							figure.figure.d-flex.flex-column.align-items-center.justify-content-center
+								img(src="./img/layer-10.png", alt="")
+								figcaption.figure-caption 
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, quo harum laboriosam inventore odit a veniam cupiditate ex. Sed, qui. Ratione expedita ad pariatur nam amet, consequuntur enim error veniam!
+									a(href="#") name pentican seven
+									p chu vu ceos
+						.item
+							figure.figure.d-flex.flex-column.align-items-center.justify-content-center
+								img(src="./img/layer-10.png", alt="")
+								figcaption.figure-caption 
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, quo harum laboriosam inventore odit a veniam cupiditate ex. Sed, qui. Ratione expedita ad pariatur nam amet, consequuntur enim error veniam!
+									a(href="#") name pentican seven
+									p chu vu ceos
+						.item
+							figure.figure.d-flex.flex-column.align-items-center.justify-content-center
+								img(src="./img/layer-10.png", alt="")
+								figcaption.figure-caption 
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, quo harum laboriosam inventore odit a veniam cupiditate ex. Sed, qui. Ratione expedita ad pariatur nam amet, consequuntur enim error veniam!
+									a(href="#") name pentican seven
+									p chu vu ceos
+						.item
+							figure.figure.d-flex.flex-column.align-items-center.justify-content-center
+								img(src="./img/layer-10.png", alt="")
+								figcaption.figure-caption 
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, quo harum laboriosam inventore odit a veniam cupiditate ex. Sed, qui. Ratione expedita ad pariatur nam amet, consequuntur enim error veniam!
+									a(href="#") name pentican seven
+									p chu vu ceos
+						.item
+							figure.figure.d-flex.flex-column.align-items-center.justify-content-center
+								img(src="./img/layer-10.png", alt="")
+								figcaption.figure-caption 
+									p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, quo harum laboriosam inventore odit a veniam cupiditate ex. Sed, qui. Ratione expedita ad pariatur nam amet, consequuntur enim error veniam!
+									a(href="#") name pentican seven
+									p chu vu ceos
+	section.home-clients.mt-5
+		.container
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x=1;x<10;x++)
+							.item
+								if (x < 7)
+									img(src="./img/clients_"+x+".png", alt="")
+								else
+									img(src="./img/clients_"+(x-3)+".png", alt="")
+	section.footer
+		.container
+			.row
+				.col-md-3
+					b FULLSTACK VIETNAM
+					p Mobile: (+84) 969689893
+					p Email: admin@fullstackvietnam.com
+					p Địa chỉ: 28 đường số 2 – CITY LAND 
+					p Phường 7 – Gò Vấp – HCM
+				.col-md-5
+					b LINK
+					.row.chiahai
+						.col-6.left
+							p Khóa học FrontEnd Master
+							p Khóa học FullStack Developer
+							p Khóa học Design chuyên nghiệp
+							p Lịch khai giảng
+							p Đăng ký Khóa học
+						.col-6.right
+							p Khóa học FrontEnd Master
+							p Khóa học FullStack Developer
+							p Khóa học Design chuyên nghiệp
+							p Lịch khai giảng
+							p Đăng ký Khóa học
+				.col-md-4
+					b EMAIL
+					form.form-inline
+						input.form-control.mr-sm-2(type="search" placeholder="Search" aria-label="Search")
+						button.btn.btn-outline-success.my-2.my-sm-0(type="submit") Search
+

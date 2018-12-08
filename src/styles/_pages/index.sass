@@ -1,0 +1,473 @@
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.slider-banner
+	.owl-carousel
+		// Phần Slider
+		.item
+			display: flex
+			text-align: center
+			flex-direction: column
+			.title
+				h1, h2, h3,
+					+fz(1rem)
+					margin: 1rem		
+	+media-breakpoint-up(lg)
+		.owl-carousel
+			.item
+				position: relative
+				&:before
+					content: ''
+					width: 100%
+					height: 50%
+					position: absolute
+					left: 0
+					bottom: 0
+					background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.8509803921568627))
+				.title
+					width: 100%
+					position: absolute
+					bottom: 1rem
+					text-align: center
+					color: white
+					+text-shadow()
+					h1, h2
+						+fz(2rem)
+					p 
+						+fz(1.5rem)
+						+lh(2rem)
+			.owl-nav
+				position: absolute
+				top: 45%
+				left: 0%
+				right: 0%
+				.owl-prev
+					border-radius: 0px
+					width: 40px
+					position: absolute
+					left: 0
+					opacity: 0.5
+					background: black
+				.owl-next
+					border-radius: 0px
+					width: 40px
+					position: absolute
+					right: 0
+					opacity: 0.5
+					background: black
+				.fa
+					font-size: 40px
+					color: white
+					opacity: 1
+		// Phần Control
+		align-items: center
+/////////////////////////////////
+// Phần News
+/////////////////////////////////
+
+.news
+	margin: 1rem
+	text-align: center
+	h4
+		font-size: 30px
+	.title
+		font-size: 14px	
+		margin: 1rem
+		b
+			padding: 16px
+			+fz(14px)
+	.wai
+		margin: 1rem
+		padding-bottom: 15px
+		margin-bottom: 15px
+		&:before
+			content: ''
+			width: 100px
+			height: 3px
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translateX(-50%)
+			background: #00c4c9
+		&:after
+			content: ''
+			width: 20px
+			height: 20px
+			border: 3px solid #00c4c9
+			border-radius: 50%
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translate(-50%, 50%)
+			background: #ffffff
+	img
+		display: block
+		width: 100%
+		height: 250px
+		object-fit: cover
++media-breakpoint-up(lg)
+	.dec
+		img
+			filter: grayscale(100%)
+			transition: 0.5s all ease-in-out
+			&:before
+				content: ''
+				width: 100%
+				height: 100%
+				position: absolute
+				left: 0%
+				bottom: 0%
+		&:hover
+			img
+				filter: grayscale(0%)
+				box-shadow: 0px 0px 0px 3px #00c4c9
+				
+			.title
+				p
+					b
+						color: #00c4c9
+/////////////////////////////////
+// .backopa cai xem img an  duoi
+/////////////////////////////////
+.backopa
+	background: url('../img/opa-1.png') no-repeat right top fixed
+	position: relative
+	background-size: 100% 100%
+	&:before
+		width: 100%
+		height: 100%
+		content: ''
+		position: absolute
+		left: 0px
+		bottom: 0px
+		background: rgba(255, 255, 255, 0.8)
+	margin: 1rem
+	text-align: center
+	h5
+		margin: 1rem
+		font-size: 30px
+	.title	
+		p
+			margin: 1rem
+			font-size: 14px
+			b
+				transition: 0.5s all ease-in-out
+				margin: 1rem
+				+fz(16px)
+			&:hober
+				b
+					color: #00c4c9
+	.ico
+		.fa
+			margin: 1rem
+			font-size: 50px		
+	.wai
+		margin: 1rem
+		padding-bottom: 15px
+		margin-bottom: 15px
+		&:before
+			content: ''
+			width: 100px
+			height: 3px
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translateX(-50%)
+			background: #00c4c9
+		&:after
+			content: ''
+			width: 20px
+			height: 20px
+			border: 3px solid #00c4c9
+			border-radius: 50%
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translate(-50%, 50%)
+			background: #ffffff
+	
++media-breakpoint-up(lg)
+	.ico
+		.fa
+			font-size: 50px
+			transition: 0.5s all ease-in-out
+		&:hover
+			.fa
+				color: #00c4c9
+
+
+					
+/////////////////////////////////
+// .devolop text dai bo me
+/////////////////////////////////
+.devolop
+	background: url('../img/opa-2.png') no-repeat right top fixed
+	position: relative
+	background-size: 100% 100%
+	.col-8
+		
+		p
+			color: rgb(255, 255, 255)
+			text-align: center
+		.btn
+			margin: 10px
+			position: relative
+			left: 50%
+			bottom: 0%
+			transform: translateX(-54%)
+			font-size: 18px
+			
+			padding: 10px
+		+media-breakpoint-up(md)
+			.btn
+				width: 30%
+	.btn-secondary
+		background: #00c4c9
+		border-radius: 15px
+	&:before
+		width: 100%
+		height: 100%
+		content: ''
+		position: absolute
+		left: 0px
+		bottom: 0px
+		background: rgba(0, 0, 0, 0.5)
+	
++media-breakpoint-up(lg)	
+	.row
+		padding: 3.125rem
+		p
+			font-size: 20px
+			font-family: "Helvetica"
+			text-align: center
+			line-height: 1.2
+			text-align: center
+			margin: 2.5rem
+		
+
+
+	/////////////////////////////////
+// .dinhuong
+/////////////////////////////////
+.dinhuong
+	margin: 1rem
+	text-align: center
+	h5
+		font-size: 30px
+	.title
+		font-size: 14px	
+		margin: 1rem
+		b
+			padding: 16px
+			+fz(14px)
+	.wai
+		margin: 1rem
+		padding-bottom: 15px
+		margin-bottom: 15px
+		&:before
+			content: ''
+			width: 100px
+			height: 3px
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translateX(-50%)
+			background: #00c4c9
+		&:after
+			content: ''
+			width: 20px
+			height: 20px
+			border: 3px solid #00c4c9
+			border-radius: 50%
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translate(-50%, 50%)
+			background: #ffffff
+	
+	
+	.item
+		display: none
+		&.active
+			display: block
+			font-size: initial
+			padding: 0
+		img
+			filter: grayscale(100%)
+			.img-thumbnail
+				padding-left: 1
+				padding-bottom: 1
+				border: initial
+				border-radius: initial
+		&:hover
+				img
+					filter: grayscale(0%)
+	.menu-sel
+		ul
+			display: flex
+			justify-content: space-between
+			color: black
+			margin: 20px
+			li
+				display: inline-block
+				list-style-type: none
+				padding-left: 10px
+				padding-right: 10px
+				&.active
+					background: #00c4c9
+					border-radius: 15px
+				&.click
+					background: #00c4c9
+					border-radius: 15px
+				a
+					color: black
+				&:hover
+					a
+						color: #fff
+						border: 1px
+	/////////////////////////////////
+// khach hang noi
+/////////////////////////////////
+.khachangnoi
+	background: url('../../img/back.png')
+	background-size: 100% 100%
+	
+	text-align: center
+	background: url
+	h6
+		font-size: 30px
+	.title
+		font-size: 14px	
+		margin: 1rem
+		b
+			padding: 16px
+			+fz(14px)
+	.wai
+		margin: 1rem
+		padding-bottom: 15px
+		margin-bottom: 15px
+		&:before
+			content: ''
+			width: 100px
+			height: 3px
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translateX(-50%)
+			background: #00c4c9
+		&:after
+			content: ''
+			width: 20px
+			height: 20px
+			border: 3px solid #00c4c9
+			border-radius: 50%
+			position: absolute
+			left: 50%
+			bottom: 0%
+			transform: translate(-50%, 50%)
+			background: #ffffff
+	.x2
+		padding-top: 0
+		position: relative
+		.owl-carousel
+			.item
+				img 
+					width: 116px
+					height: 116px
+					padding: 0
+					object-fit: fill
+					background: #00c4c9
+					border: 3px solid #00c4c9
+					border-radius: 51%
+				.figure
+					p
+						font-size: 16px
+						padding: 1rem
+						margin: 0
+					a
+						text-decoration: none
+						color: black
+						font-size: 18px
+						vertical-align: 10
+						padding-top: 1rem
+						&:hover
+							color: #00c4c9
+			
+			.owl-dots
+				margin: 0
+				padding: 0
+				
+				position: absolute
+				bottom: 0
+				left: 0
+				right: 0
+				.owl-dot
+					&.active
+						span
+							background: #00c4c9
+					&:hover
+						span
+								background: #00c4c9
+
+
+		
+	/////////////////////////////////
+// home cai xem img an  duoi
+/////////////////////////////////
+.home-clients
+	.owl-carousel
+		position: relative
+		.owl-nav
+			
+			position: absolute
+			left: 0
+			right: 0
+			top: -9px
+			.owl-prev
+				border-radius: 0px
+				width: 40px
+				position: absolute
+				left: -7%
+				opacity: 1
+				background: #083e64
+			.owl-next
+				border-radius: 0px
+				width: 40px
+				position: absolute
+				right: -7%
+				opacity: 1
+				background: #083e64
+			.fa
+				
+				color: white
+				opacity: 1
+/////////////////
+//footer
+/////////////////
+.footer
+	background: #00c4c9
+	.chiahai
+		padding: 0
+		margin: 0
+		.left
+			padding: 0
+			margin: 0
+		.right
+			padding: 0
+
+	b
+		text-align: left
+		font-size: 16px
+		color: #083e64
+	p
+		color: #7bfcff
+		text-align: left
+		font-size: 10px
+		padding: 0
+		margin: 0
+	.form-inline
+		background: #083e64
+		.form-control
+			background: #083e64
+		.btn-outline-success
+			background: #09f9ff
