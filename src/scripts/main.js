@@ -51,6 +51,17 @@ $(document).ready(function () {
 		}
 
 	})
+	//hover img cua menu xo
+	$('.dinghuong .item').hover( function(){
+		$(this).css(
+			'box-shadow', '0px 0px 0px 3px #00c4c9'
+		)
+	});
+	$('.dinghuong .item').mouseleave(function(){
+		$(this).css(
+			'box-shadow', '0px 0px 0px 0px'
+		)
+	});
 	//slide ke cuoi ci dots
 	$('.khachangnoi .owl-carousel').owlCarousel({
 		items: 1,
